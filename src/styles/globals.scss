@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --grey-100: #f9f9f9;
+  --grey-500: #7f7f7f;
+  --grey-800: #4a4a4a;
+  --grey-900: #445566;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--grey-100);
+}
+
+body, input, button, select {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}

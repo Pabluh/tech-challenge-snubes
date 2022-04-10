@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  width: 100%;
+  background: url("/images/hero.jpg") no-repeat;
+  background-size: cover;
+  height: 506px;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  width: 1198px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  color: var(--white);
+
+  h1 {
+    font-size: 1.125rem;
+  }
+}
+
+.textStatistics {
+  display: grid;
+  grid-gap: 2.875rem;
+  grid-template-columns: [col] auto [col] auto [col] auto [col] auto;
+  text-align: center;
+  margin-top: 0.625rem;
+
+  strong {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 295px;
+    background: url("/images/hero-darker.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: 48%;
+  }
+
+  .content {
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    padding: 1.875rem 0.938rem;
+  }
+
+  .text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textStatistics {
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 1.25rem;
+  }
+
+  .formulario {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    height: 201px;
+    background: url("/images/hero-darker.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  .text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .formulario {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 0;
+  }
+}
