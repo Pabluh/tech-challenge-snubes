@@ -17,19 +17,10 @@
   justify-content: space-between;
 }
 
-.navList {
-  display: flex;
-  list-style: none;
-}
-
-.navList li {
-  margin-left: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+.arrowDown {
+  height: 13px;
+  margin-left: 6px;
+  margin-top: 2px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -42,4 +33,13 @@
     max-width: 1198px;
     justify-content: space-between;
   }
+
+  .navList {
+  display: flex;
+  list-style: none;
+}
+
+.navList li {
+  margin-left: 2rem;
+}
 }
