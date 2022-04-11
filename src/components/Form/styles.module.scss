@@ -1,8 +1,253 @@
-.content {
+.formWhite {
   display: flex;
-  width: auto;
-  height: 461px;
-  padding: 1.563rem 2.188rem ;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   background-color: var(--white);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headerFormWhite {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 84px;
+  color: var(--grey-900);
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    font-weight: normal;
+  }
+}
+
+.contentFormWhite {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 240px;
+
+
+  input {
+    width: 360px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #ee5566;
+    outline: none;
+    text-indent: 1rem;
+    
+  }
+  ::placeholder {
+    color: var(--grey-200);
+    font-size: 1.125rem;
+  }
+
+  label {
+    color: var(--grey-900);
+    font-size: 1.125rem;
+    margin-right: 1rem;
+  }
+
+  select {
+    width: 90px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-200);
+    background-color: var(--white);
+  }
+
+  .inputPhone {
+    width: 254px;
+    margin-left: 16px;
+
+    div {
+      display: none;
+    }
+  }
+}
+
+.buttonForm {
+  button {
+    width: 280px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #0099ee;
+    background-color: #0099ee;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 1.875rem;
+  }
+}
+
+.formStyled {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grey-100);
+  border: 1px solid #0099ee;
   border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerFormStyled {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 84px;
+  background: #0099ee no-repeat;
+  border-radius: 8px 8px 0 0;
+  color: var(--white);
+
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+.contentFormStyled {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+
+  input {
+    width: 360px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #ee5566;
+    outline: none;
+    text-indent: 1rem;
+    
+  }
+  ::placeholder {
+    color: var(--grey-200);
+    font-size: 1.125rem;
+  }
+
+  label {
+    color: var(--grey-900);
+    font-size: 1.125rem;
+  }
+
+  select {
+    width: 90px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-200);
+    background-color: var(--white);
+  }
+
+  .inputPhone {
+    width: 254px;
+    margin-left: 16px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .formWhite {
+    display: flex;
+    width: 100%;
+    height: 539px;
+    background-color: var(--white);
+    border-radius: 0;
+  }
+
+  .headerFormWhite {  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      display: none;
+    }
+  }
+
+  .formStyled {
+    height: 564px;
+  }
+
+  .headerFormStyled {  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .contentFormStyled {
+    .fields {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .formWhite {
+    height: 481px;
+  }
+  
+  .formStyled {
+    height: 454px;
+  }
+
+  .contentFormStyled {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 240px;
+
+    label {
+      color: var(--grey-900);
+      font-size: 1.125rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .formWhite {
+    width: 614px;
+    height: 461px;
+    border-radius: 8px;
+  }
+
+  .headerFormWhite {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .formStyled {
+    width: 420px;
+    height: 626px;
+  }
+
+  .headerFormStyled {
+    width: 420px;
+  }
+
+  .contentFormStyled{
+    .fields {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 80px;
+    }
+  }
 }

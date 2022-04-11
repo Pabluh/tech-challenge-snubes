@@ -52,7 +52,7 @@ export const Faq = () => {
             />
           </div>
         </div>
-        <Form />
+        <Form hasStyle={true} />
       </div>
     </div>
   );

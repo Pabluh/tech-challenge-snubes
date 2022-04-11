@@ -8,11 +8,11 @@ export const Hero = () => {
 
   return (
     <>
-      {size.width < 1200 && <Form className={styles.formulario} />}
+      {size.width < 1200 && <Form />}
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.formulario}>
-            <Form className={styles.formulario} />
+          <div className={styles.displayForm}>
+            <Form />
           </div>
           <div className={styles.text}>
             <h1>{`Welcome to Europe's largest call center database`}</h1>
