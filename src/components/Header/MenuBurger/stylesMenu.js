@@ -15,6 +15,7 @@ export const stylesMenu = {
   bmCrossButton: {
     height: "24px",
     width: "24px",
+    right: "16px",
   },
   bmCross: {
     background: "#f9f9f9",
@@ -28,6 +29,7 @@ export const stylesMenu = {
     background: "#aabbcc",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15rem",
+    listStyle: "none",
   },
   bmMorphShape: {
     fill: "#373a47",

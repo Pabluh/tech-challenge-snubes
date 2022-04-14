@@ -5,6 +5,8 @@
 }
 
 :root {
+  --blue: #0099ee;
+  --red: #ee5566;
   --white: #ffffff;
   --grey-100: #f9f9f9;
   --grey-200: #aabbcc;
@@ -18,7 +20,9 @@ body {
   background: var(--grey-100);
 }
 
-body, input, button, select {
+body,
+input,
+button {
   font-family: "Roboto", sans-serif;
 }
 

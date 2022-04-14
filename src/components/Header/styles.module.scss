@@ -17,29 +17,23 @@
   justify-content: space-between;
 }
 
-.arrowDown {
-  height: 13px;
-  margin-left: 6px;
-  margin-top: 2px;
-}
-
 @media screen and (min-width: 1200px) {
   .container {
     height: 4.375rem;
     padding: 0 2rem;
   }
-  
+
   .content {
     max-width: 1198px;
     justify-content: space-between;
   }
 
   .navList {
-  display: flex;
-  list-style: none;
-}
+    display: flex;
+    list-style: none;
+  }
 
-.navList li {
-  margin-left: 2rem;
-}
+  .navList li {
+    margin-left: 2rem;
+  }
 }
